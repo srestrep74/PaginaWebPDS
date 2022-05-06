@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background-color: white;
+    background-color: #2a0236;
+  }
+  
+  .header {
+    background-color: #9B1EE4 ;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #2a0236;
+    transition: 0.5s;
+    
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #9B1EE4 ;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color:#2a0236;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  .seccion1{
+    border: none;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 5%;
+    
+  }
+
+  .seccion1 h2{
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .seccion1 form {
+    text-align: center;
+    padding: 3%;
+  }
+
+  .cajonTestimonio {
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    width: 75%;
+    height: 100px;
+    margin-bottom: 1%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+  }
+
+  .seccion2 {
+    text-align: center;
+    
+  }
+
+  .form{
+    color: white;
+    border-radius: 10px;
+    background-color: #2f3640;
+    text-align: center;
+		width: 100%;
+		height: 40px;
+		max-width: 400px;
+	}
+
+button{
+  padding: 10px 15px;
+  border: 3px solid black;
+  outline: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+  top: 2rem;
+  left: 48rem;
+  border-radius: 10px;
+}
+
+button:hover{
+  color: white;
+  background-color: #2a0236;
+}
+
+.story-card {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1%;
+  background-color: white;
+}
+
+.story-card:hover{
+  margin-left: 18%;
+  margin-right: 18%;
+  transition: 0.1s;
+  box-shadow: 20px 15px black;
+}
+
+.story-card__author {
+  
+  font-size: 25px;
+  text-align: start;
+  color: black;
+}
+
+.story-card__date {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: start;
+}
+
+.story-card__description {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: black;
+  font-size: 20px;
+  text-align: start;
+}
+
+.story-card h4 {
+  text-align: start;
+}
+
+.cajaComentario {
+  background-color: transparent;
+  resize: none;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin-top: 20px
+}
+
+.comentarios {
+  width: 55%;
+  max-width: 300px;
+  padding: 30px;
+  
+  text-align:start;
+}
+
+#logo {
+  width:15%;
+  height: 10%;
+  margin: 10px;
+}
+
+#cerrarSesion:active{
+  background-color: white;
+  color:black;
+}
+
